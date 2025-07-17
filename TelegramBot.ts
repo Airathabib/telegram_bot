@@ -3,11 +3,8 @@ import { Mistral } from '@mistralai/mistralai';
 import 'dotenv/config';
 
 // === Настройки ===
-const TELEGRAM_BOT_TOKEN =
-  process.env.TELEGRAM_BOT_TOKEN ||
-  '8038560685:AAGOXKqpzr8BfWroxaTX3j-ar_bxZ7-BY90';
-const MISTRAL_API_KEY =
-  process.env.MISTRAL_API_KEY || 'C7PBgnTAPUdqpIwjUtlQZar8H5zljW1b';
+const TELEGRAM_BOT_TOKEN = '';
+const MISTRAL_API_KEY = process.env.MISTRAL_API_KEY || '';
 // === Типы из Mistral SDK (объявляем локально, чтобы не было конфликтов) ===
 interface TextChunk {
   type: 'text';
